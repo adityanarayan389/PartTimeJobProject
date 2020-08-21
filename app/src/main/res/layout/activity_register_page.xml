@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage">
+    <TextView
+        android:id="@+id/choose"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Accordingly"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+    
+    <Button
+        android:id="@+id/job_seeker"
+        android:layout_width="210sp"
+        android:layout_height="125sp"
+        android:layout_below="@+id/choose"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"
+        android:text="Job Seeker"
+        android:textSize="30sp"
+        />
+    <Button
+        android:id="@+id/job_provider"
+        android:layout_width="210sp"
+        android:layout_height="125sp"
+        android:layout_below="@+id/job_seeker"
+        android:layout_marginTop="35dp"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"
+        android:text="Job Provider"
+        />
+
+
+
+</RelativeLayout>

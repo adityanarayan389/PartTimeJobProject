@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "182976930891",
+    "firebase_url": "https://parttimejobproject-909d3.firebaseio.com",
+    "project_id": "parttimejobproject-909d3",
+    "storage_bucket": "parttimejobproject-909d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182976930891:android:e69dda1c889523e370d9ce",
+        "android_client_info": {
+          "package_name": "com.appstone.parttimejobproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182976930891-5ohas4lf0ce375l6tu2qe0092e4m24e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB532wffIKhzNRCLu0o2gSCxs1aQDE42Pk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182976930891-5ohas4lf0ce375l6tu2qe0092e4m24e2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

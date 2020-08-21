@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/ic_launcher_background"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:text="WELCOME TO OUR LOGIN PAGE"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/login_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/welcome"
+                android:layout_marginTop="20dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="User Id" />
+
+            <EditText
+                android:id="@+id/et_LogInUserId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_id"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+                android:hint="Enter your register email-id/number"
+                android:inputType="textPersonName"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user"
+                android:layout_marginTop="2dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="Password" />
+            <EditText
+                android:id="@+id/et_LogInPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password"
+                android:layout_marginTop="5dp"
+                android:inputType="textPassword"
+                android:hint="Enter your password"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <CheckBox
+                android:id="@+id/chk_remember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Remember Me"/>
+            <Button
+                android:onClick="onclickLogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/pd_text"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:text="LOGIN"/>
+            <TextView
+                android:id="@+id/notregistered"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Not Registered?"
+                android:layout_below="@+id/login_btn"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <Button
+               android:onClick="onClickSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="sign up"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
