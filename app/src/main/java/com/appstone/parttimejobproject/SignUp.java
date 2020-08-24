@@ -44,6 +44,12 @@ public class SignUp extends AppCompatActivity {
 
         btnSignUp = findViewById(R.id.btn_signUp);
 
+////        if (auth.getCurrentUser() != null){
+////            startActivity(new Intent(SignUp.this,RegisterPage.class));
+////            finish();
+//
+//        }
+
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,7 +64,14 @@ public class SignUp extends AppCompatActivity {
                      || TextUtils.isEmpty(txt_LastName) || TextUtils.isEmpty(txt_PhoneNo)
                      || TextUtils.isEmpty(txt_cnfrmPassword)){
                         Toast.makeText(SignUp.this, "fill all the blanks",Toast.LENGTH_LONG).show();
+                    }else if(txt_password.length() < 6) {
+                        signUpPassword.setError("password must be greater than 6");
                     }
+
+//                    } else if (txt_password != txt_cnfrmPassword){
+//                       signUpCnfrmPassword.setError("password didn't match");
+//
+//                    }
                     else{
                         signUpUser(txt_email,txt_password);
                     }
@@ -78,7 +91,7 @@ public class SignUp extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         Toast.makeText(SignUp.this, "successfully registered", Toast.LENGTH_LONG).show();
-                        startActivity(new Intent(SignUp.this,LoginPage.class));
+                        startActivity(new Intent(SignUp.this,RegisterPage.class));
                     } else {
                         Toast.makeText(SignUp.this, "registration failed", Toast.LENGTH_LONG).show();
                     }
@@ -88,6 +101,10 @@ public class SignUp extends AppCompatActivity {
 
 
 //        }
+    }
+
+    public void backToLogInPage(View view){
+        startActivity(new Intent(SignUp.this,LoginPage.class));
     }
 
 

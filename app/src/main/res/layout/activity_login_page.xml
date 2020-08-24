@@ -78,12 +78,13 @@
                 android:drawableLeft="@drawable/ic_baseline_lock_24"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
-            <CheckBox
-                android:id="@+id/chk_remember"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="Remember Me"/>
+                android:onClick="resetPassword"
+                android:textSize="20sp"
+                android:text="Reset Password"/>
+
             <Button
                 android:onClick="onclickLogIn"
                 android:layout_width="wrap_content"
